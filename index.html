@@ -15,8 +15,20 @@
 
 </head>
 <!--- cometario-->
-<body>
-    <header> 
+<body onscroll="onScroll()">
+    <nav id="navigation" class= "scroll">
+        <div class="wrapper">
+            <a  href="#"> <img class="logo" alt="Logo" src="assets/Logo.png"/></a>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+        </div>
+        
+    </nav>
+    <header class= "wrapper"> 
             <h4>BEM VINDO AO NLWfIT</h4>
     <h1>Calistenia simples para todos</h1>
     <p>Exercícios calistênicos podem ser bastante inclusivos, permitindo que qualquer pessoa — independente de peso, condição física e idade</p>
@@ -27,23 +39,25 @@
 
     <img src="assets/istockphoto-1306141632-170667a.jpg" alt = "Mulher correndo"
     />
-        <div>
+        <div class="infos"> 
             
-            <div>
+            <div class="info">
                 <h3>Benefícios da calistenia</h3>
                 <p>Os exercicios podem aumentar a flexibilidade e a mobilidade articular, Melhorar equilíbrio corporal, Desenvolver coordenação motora e muito mais</p>
             </div>    
-            <div>
+            <div class="info">
                 <h3>exercícios de Calistenia são muito difíceis?</h3>
                 <p>Os exercício calistênicos contam com diferentes níveis de dificuldade que podem se adequar a quem esta praticando</p>
             </div>
-            <div>
+            <div class="info">
                 <h3>O QUE DIZ A CIÊNCIA</h3>
                 <p>cientistas da unidade de pesquisa de Ciências do Esporte e Exercício da Universidade de Palermo, Itália, fizeram uma pesquisa que apontou que o treinamento de calistenia melhora a postura, força e composição corporal.</p>
             </div>
         
         </div>
     </header>
+    
+    <script src="main.js"></script>
 
 </body>
 </html>
