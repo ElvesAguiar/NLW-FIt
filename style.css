@@ -28,13 +28,6 @@ body {
    
 }
 
-.wrapper {
-    /* width: 37.5rem; */
-    width: 80%;
-    margin-inline: auto;
-    padding-inline: 2.4rem;
-
-}
 /*=============== Header ========================================*/
 header{
     
@@ -142,7 +135,7 @@ header img{
 /*=============== Nav ========================================*/
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     height: var(--nav-height);
 
@@ -150,11 +143,12 @@ nav {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-}
-.wrapper{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-inline: auto;
+    padding-inline: 2.4rem;
 }
 nav.scroll {
     background: var(--primary-color);
@@ -167,6 +161,44 @@ nav.scroll svg path {
 .logo{
     width: 12rem;
 }
-.menu ul {
-    display: flex;
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+
 }
+.hamburger:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 76.7rem) {
+    nav.scroll ul {
+        display: none;
+    }
+    #nav-ul.show {
+        display: flex;
+        
+        
+    }
+    .hamburger {
+        display: block;
+    }
+
+   
+}
+@media screen and (min-width: 76.8rem) {
+    
+    .hamburger {
+        display: none;
+    }
+    nav.scroll ul {
+        display: flex;
+
+    }
+    nav.scroll ul li {
+        margin: 0 1rem;
+        list-style: none;
+    }
+}
+
+
