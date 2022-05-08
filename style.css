@@ -163,6 +163,9 @@ nav.scroll svg path {
     fill: hsl(223, 100%, 21%);
     stroke: hsl(223, 100%, 21%);
 }
+#nav-ul{
+   padding-block: auto;
+}
 nav.scroll ul li {
     margin: 0 1rem;
     list-style: none;
@@ -180,9 +183,9 @@ color:#fff;
 text-shadow:0px 0px 5px #fff;
 }
 
-.logo{
+/* .logo{
     width: 12rem;
-}
+} */
 .hamburger{
     background-color: transparent;
     border: 0;
