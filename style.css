@@ -6,7 +6,7 @@ box-sizing: border-box;
 
 :root{
     --primary-color: hsl(22, 100%, 50%);
-    --headline: hsl(210, 11%, 15%);
+    --headline:hsl(223, 100%, 21%);
     --paragraph: hsl(210, 9%, 31%);
     --brand-beige:  hsl(39, 100%, 97%);
     --brand-light: hsl(152, 23%, 89%);
@@ -29,15 +29,20 @@ body {
 
    
 }
+
+
+
+
 /*=============== Header sobre ========================================*/
 #sobreId {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 5rem;
     margin-left: auto;
     margin-right: auto;
-    padding-block: 15rem;
+
 }
 /*=============== Header-exercicio ========================================*/
 #exercicios{
@@ -46,25 +51,23 @@ body {
     align-items: center;
     justify-content: center;
     margin:15rem;
+    margin-top: 0;
 }
+body .agachamento,.abdominal,.triceps,.flexao,.barras-paralelas{
+    background-color: #fff;
+    padding-inline: 4rem;
+}
+#exercicios{
+    border-radius: 2rem;
+    background-color: #fff;
+}
+
 /*=============== Header ========================================*/
 header{
     
     margin-top: calc(4.1rem + var(--nav-height));
     
 }
-/* header::before{
-    content: "";
-    width: 100vw;
-    height: calc(100vh + var(--nav-height));
-    background-color:var(--brand-light);
-    display: block;
-    
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    z-index: -1;
-} */
 header h4{
     font-size: 1.4rem;
     color: var(--primary-color);
@@ -124,7 +127,13 @@ header img{
 }
 
 #iniial-text {
-    margin: 15rem;
+    margin: 10rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding-inline: 5rem;
+}
+body p{
+font-size: 2.3rem;
 }
 
 .infos{
@@ -143,7 +152,7 @@ header img{
 }
 
 .info h3{
-    font-size: 4.8rem;
+    font-size: 2.8rem;
     color: var(--headline);
     line-height: 130%;
     margin-bottom:0.4rem;
@@ -152,7 +161,7 @@ header img{
 .info p {
     margin: 0rem;
     color: var(--primary-color);
-    font-size: 1.6rem;
+    font-size: 2rem;
     line-height: 150%;
 }
 
@@ -231,6 +240,9 @@ text-shadow:0px 0px 5px #fff;
    
 }
 @media screen and (min-width: 76.8rem) {
+    :root{
+        font-size: 80%;
+    }
     
     .hamburger {
         display: none;
@@ -238,6 +250,20 @@ text-shadow:0px 0px 5px #fff;
     nav.scroll ul {
         display: flex;
 
+    }
+
+    .infos{
+        width: 80%;
+        padding-block: 4rem;
+        margin-inline: auto;
+    
+        background-color: var(--brand-beige);
+        border: 1px solid var(--brand-light);
+    
+        display: flex;
+        flex-direction: row
+    
+        gap: 6rem;
     }
 }
 
