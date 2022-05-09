@@ -56,6 +56,7 @@ body {
 body .agachamento,.abdominal,.triceps,.flexao,.barras-paralelas{
     background-color: #fff;
     padding-inline: 4rem;
+    border-radius: 2rem;
 }
 #exercicios{
     border-radius: 2rem;
@@ -149,6 +150,7 @@ font-size: 2.3rem;
     justify-content: center;
 
     gap: 6rem;
+    margin-bottom: 5rem;
 }
 
 .info h3{
