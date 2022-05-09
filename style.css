@@ -167,10 +167,9 @@ font-size: 2.3rem;
 
 /*=============== Nav ========================================*/
 nav {
-    display: flex;
-    justify-content: center;
-       
+    display: flex;       
     justify-content: space-evenly;
+    align-items: center;
 
 
     height: var(--nav-height);
@@ -188,12 +187,18 @@ nav.scroll {
     background: var(--primary-color);
     width: 100vw;
 }
+.logo {
+    width: 10rem;
+}
 nav.scroll svg path {
     fill: hsl(223, 100%, 21%);
     stroke: hsl(223, 100%, 21%);
 }
 #nav-ul{
    padding-block: auto;
+}
+#nav-ul li a{
+    text-decoration: none;
 }
 nav.scroll ul li {
     margin: 0 1rem;
