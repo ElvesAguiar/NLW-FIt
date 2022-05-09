@@ -62,6 +62,10 @@ body .agachamento,.abdominal,.triceps,.flexao,.barras-paralelas{
     border-radius: 2rem;
     background-color: #fff;
 }
+iframe{
+    width: 41rem;
+    height:31.5rem ;
+}
 
 /*=============== Header ========================================*/
 header{
