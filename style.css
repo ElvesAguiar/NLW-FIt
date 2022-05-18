@@ -33,45 +33,16 @@ body {
 
 
 
-/*=============== Header sobre ========================================*/
-#sobreId {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5rem;
-    margin-left: auto;
-    margin-right: auto;
 
-}
-/*=============== Header-exercicio ========================================*/
-#exercicios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin:15rem;
-    margin-top: 0;
-}
-body .agachamento,.abdominal,.triceps,.flexao,.barras-paralelas{
-    background-color: #fff;
-    padding-inline: 4rem;
-    border-radius: 2rem;
-}
-#exercicios{
-    border-radius: 2rem;
-    background-color: #fff;
-}
-iframe{
-    width: 41rem;
-    height:31.5rem ;
-}
 
 /*=============== Header ========================================*/
 header{
     
     margin-top: calc(4.1rem + var(--nav-height));
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
 }
 header h4{
     font-size: 1.4rem;
@@ -84,6 +55,7 @@ header h1{
     color: var(--secondary-color);
     line-height:130%;
     margin-bottom: 2.4rem;
+    
 
 }
 
@@ -132,7 +104,6 @@ header img{
 }
 
 #iniial-text {
-    margin: 10rem;
     background-color: #fff;
     border-radius: 2rem;
     padding-inline: 5rem;
@@ -171,6 +142,37 @@ font-size: 2.3rem;
     line-height: 150%;
 }
 
+/*=============== Header sobre ========================================*/
+#sobreId {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/*=============== Header-exercicio ========================================*/
+#exercicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    margin-top: 0;
+    padding: 0 2rem 0 2rem;
+}
+body .agachamento,.abdominal,.triceps,.flexao,.barras-paralelas{
+    background-color: #fff;
+    border-radius: 2rem;
+    width: 32rem;
+}
+#exercicios{
+    border-radius: 2rem;
+    background-color: #fff;
+}
+
 /*=============== Nav ========================================*/
 nav {
     display: flex;       
@@ -185,7 +187,7 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     
-    width: 80%;
+    width:100vw;
     margin-inline: auto;
     padding-inline: 2.4rem;
 }
@@ -232,9 +234,20 @@ text-shadow:0px 0px 5px #fff;
     outline: none;
 }
 
+footer{
+    background-color: var(--primary-color);
+    height: 5rem;
+    padding-block: 2rem;
+}
+
+/*================= Sobre ==================*/
+
+.iniial-text-sobre{
+    margin-top: 10rem;
+}
 
 /*================= media-querry ==================*/
-@media only screen and (max-width: 76.7rem) {
+@media (max-width: 76.7rem) {
     nav.scroll ul {
         display: none;
         width: 100%;
@@ -248,8 +261,31 @@ text-shadow:0px 0px 5px #fff;
         display: block;
     }
 
+    .infos{
+        width: 80%;
+        padding: 0 2rem 0 2rem;    
+        width: 100vw;
+        background-color: var(--brand-beige);
+        border: 1px solid var(--brand-light);
+               
+    }
+    header img{
+        width: 30rem;
+        
+        display:flex;
+
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3.2rem;
+        object-position: 0 1rem;
+    }
+    .exercicios{
+        width: 80%;
+    }
+
    
 }
+
 @media screen and (min-width: 76.8rem) {
     :root{
         font-size: 80%;
@@ -264,18 +300,24 @@ text-shadow:0px 0px 5px #fff;
     }
 
     .infos{
-        width: 80%;
-        padding-block: 4rem;
-        margin-inline: auto;
-    
-        background-color: var(--brand-beige);
-        border: 1px solid var(--brand-light);
+        width: 100vw;
+        padding: 0 4rem 0 4rem;
+        margin: 0 2rem 0 2rem;
     
         display: flex;
         flex-direction: row
     
-        gap: 6rem;
+        
     }
+
+    
+}
+
+@media screen and (max-width: 417px) {
+    .video{
+        display: none;
+    }
+    
 }
 
 
